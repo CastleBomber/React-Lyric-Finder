@@ -5,9 +5,13 @@
  *
  *  Acknowledgements: Traversy Media's Youtube Lyric Search app series
  *
+ *  Website Tools:
+ *  MusixMatch - songs with lyrics
+ * 
  *  Tips:
  *  affirm correct folder, npm run start
  *  cmd+D will change opening and closing tag simultaneously
+ *  cmd+D (+ D..) change multiple nearby instances of a name
  */
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
