@@ -22,7 +22,7 @@
  */
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./components/layout/NavBar";
+import Navbar from "./components/layout/Navbar";
 import Index from "./components/layout/Index";
 import { Provider } from "./context";
 import Lyrics from "./components/tracks/Lyrics";
@@ -33,11 +33,11 @@ function App() {
     <Provider>
       <Router>
         <React.Fragment>
-          <NavBar />
+          <Navbar />
           <div className="container">
             <Routes>
-              <Route exact path="/" element={<Index/>} />
-              <Route exact path="/lyrics/track/:id" element={<Lyrics/>} />
+              <Route exact path="/" element={<Index />} />
+              <Route exact path="/lyrics/track/:id" element={<Lyrics />} />
             </Routes>
           </div>
         </React.Fragment>
