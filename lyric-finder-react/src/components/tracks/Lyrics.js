@@ -11,7 +11,7 @@ const Lyrics = (props) => {
   useEffect(() => {
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?commontrack_id=${props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+        `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
         let lyrics = res.data.message.body.lyrics;
