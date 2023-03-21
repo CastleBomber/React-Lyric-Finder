@@ -28,9 +28,11 @@ import { Provider } from "./context";
 import Lyrics from "./components/tracks/Lyrics";
 import "./App.css";
 
+import { ContextController } from "./context";
+
 function App() {
   return (
-    <Provider>
+    <ContextController>
       <Router>
         <React.Fragment>
           <Navbar />
@@ -42,7 +44,7 @@ function App() {
           </div>
         </React.Fragment>
       </Router>
-    </Provider>
+    </ContextController>
   );
 }
 
